@@ -1,9 +1,8 @@
 import Banner from "@/components/Banner";
 import PageHeader from "@/components/PageHeader";
 import Card from "@/components/products/Card";
+import Teams from "@/components/Teams";
 import Head from "next/head";
-import Image from "next/image";
-import Goni from "../../public/img/pakan-goni.jpeg";
 
 export default function Home() {
   return (
@@ -17,9 +16,21 @@ export default function Home() {
 
       <Banner />
 
-      <PageHeader />
+      <PageHeader
+        title="Pakan Ternak Sapi"
+        description="Dijamin sapi anda pasti akan kenyang dan juga sehat. karna makanan ini
+        mengandung zat energi super yang bisa membuat sapi 20x lebih kuat dari
+        sebelumya."
+      />
 
       <Card />
+
+      <PageHeader
+        title="Team Kami"
+        description="Ini adalah sekumpulan orang-orang keren, yang mau membantu orang yang membutuhkan pangan segala ternak melata, dilaut maupun di luar angkasa"
+      />
+
+      <Teams />
     </>
   );
 }
